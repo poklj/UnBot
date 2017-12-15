@@ -12,3 +12,4 @@ UnBot is a bot whose current goal is to supplement discords current Administrati
 3. WebUi
 4. Implement UserID, ServerID and Message ID resolving
 5. Implement a Command list using Objects
+6. Fix Code Blocks within Content

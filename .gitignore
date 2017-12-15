@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+Undelete_Bot/bot_token.txt
+*.dat
+Undelete_Bot/Servers.dir
+*.bak
+Undelete_Bot/__pycache__/BotCommands.cpython-36.pyc
+*.pyc

@@ -65,7 +65,7 @@ async def on_message_delete(message):
                  "Content: ```{3}```".format(datetime.datetime.now(),  user.mention, chan.mention, str(message.content), message.author.id)
 
 
-    c = servers[str(message.server)]
+    c = servers[str(message.server.id)]
     await client.send_message(destination=client.get_channel(c), content=outMessage)
 
 @client.event

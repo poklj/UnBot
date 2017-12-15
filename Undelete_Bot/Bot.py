@@ -63,11 +63,13 @@ async def on_message_delete(message):
     debugout("Message-Deleted[server({0}) User({1}) Message({2})]".format(message.server, message.author, message.content))
     user = message.author
     chan = message.channel
-    outMessage = "User Has Deleted a Message [{0} AST]\n" \
+    outMessage = "------------------------------------" \
+                 "User Has Deleted a Message [{0} AST]\n" \
                  "User: {1}\n" \
                  "User id: {2}\n" \
                  "Channel: {3}\n" \
-                 "Content: ```{4}```".format(datetime.datetime.now(),  user.mention, message.author.id ,chan.mention, str(message.content) )
+                 "Content: ```{4}```" \
+                 "------------------------------------".format(datetime.datetime.now(),  user.mention, message.author.id ,chan.mention, str(message.content) )
 
 
     c = servers[str(message.server.id)]
@@ -78,12 +80,14 @@ async def on_message_edit(message, after):
     debugout("Mesasage-Edit[server[{0} User({1} Message[{2}]".format(message.server, message.author, message.content))
     user = message.author
     chan = message.channel
-    outMessage = "User has Edited a Message [{0}]\n" \
+    outMessage = "----------------------------------" \
+                 "User has Edited a Message [{0}]\n" \
                  "User: {1}\n" \
                  "User id: {2}\n" \
                  "Channel: {3}\n" \
                  "Content before: ``` {4} ```\n" \
-                 "Content After: ``` {5} ```".format(datetime.datetime.now(),  user.mention, message.author.id, chan.mention, str(message.content), str(after.content))
+                 "Content After: ``` {5} ```" \
+                 "----------------------------------".format(datetime.datetime.now(),  user.mention, message.author.id, chan.mention, str(message.content), str(after.content))
     c = servers[str(message.server.id)]
     await client.send_message(destination=client.get_channel(c), content=outMessage)
 

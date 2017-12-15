@@ -1,3 +1,6 @@
+__Version__ = "1.2"
+__Author__ = "Zachary Higgs"
+
 import discord
 import asyncio
 import os.path as path
@@ -25,6 +28,7 @@ if path.isfile('./bot_token.txt'):
     with open('./bot_token.txt') as f:
         token = f.read()
 
+# Use this to Bypass the File read if the token file refuses to work
 if bypassFile == 1:
     token = ''
 

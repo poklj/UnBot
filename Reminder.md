@@ -1,5 +1,5 @@
 # Reminder Text
-``` This is just Stuff I talk about with others if there's strokes of 'genius' so I can remember them ```
+ This is just Stuff I talk about with others if there's strokes of 'genius' so I can remember them
 
 ```Where the commands is initialized earlier
 It can be stupidly simplified

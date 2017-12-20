@@ -26,7 +26,7 @@ And Reimplement the shelf setup
 Guh
 + Roadmap Item: Implement proper Command Authorization
 *************
-That's gonna be fucking annoying
+That's gonna be ******* annoying
 Well
 Actually(edited)
 If I make each command a class
